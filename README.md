@@ -35,16 +35,16 @@ and is used to give you an idea of how you could add complex configuration to an
 * [Why Node?](https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js)
 * [Express?](https://expressjs.com/)
 
-## Topics
-1. How to stand up a node app and what we are doing here.
-    i. Node / Babel / Nodemon
-    ii. Dotenv and node processes
-2. Basics of Express (what role does it fill?)
-    i. Routes, HTTP and Middleware
-3. Examples
-    i. Setting up App
-    ii. 3P Middleware / Router Parameters
-    iii. Defining Routes (Default and Specific)
-    iiii. Responses (response.json / response.send / response.sendStatus)
-    iiiii. Service Calls
-    iiiiii. Custom Middleware
+## Walkthrough
+1. How to stand up a node app and what we are doing here :
+    1. Node / Babel / Nodemon
+    2. Dotenv and node processes
+2. Basics of Express (what role does it fill?) :
+    1. Routes, HTTP and Middleware
+3. Examples :
+    1. Setting up App
+    2. 3P Middleware / Router Parameters
+    3. Defining Routes (Default and Specific)
+    4. Responses (response.json / response.send / response.sendStatus)
+    5. Service Calls
+    6. Custom Middleware
