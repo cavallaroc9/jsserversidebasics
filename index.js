@@ -11,6 +11,7 @@ import cors from 'cors';
 /** Setup Express and configure it with optional helpers **/
 const app = express();
 
+/** Setup 3P middlewares **/
 // Handle Liberty Proxy
 app.set('trust proxy', 1);
 // Populate the req.cookies param, sorting cookies by key / value pairs.

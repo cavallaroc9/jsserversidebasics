@@ -47,7 +47,7 @@ router.use('/serviceCall', (req, res) => {
   // Making the service call, handling the success and failure
   return rp.get(generateCurrencyURL(req), { json: true, followRedirect : false })
     .then(resp => res.send(resp))
-    .catch(err => res.send(err));
+    .catch(err => res.status(500).send(err));
 });
 
 // Setup basic catch-all route

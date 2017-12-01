@@ -34,3 +34,17 @@ and is used to give you an idea of how you could add complex configuration to an
 * [Server Side JS?](http://www.zdnet.com/article/javascript-explodes-on-the-server-side-with-the-growth-of-node-js/)
 * [Why Node?](https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js)
 * [Express?](https://expressjs.com/)
+
+## Topics
+1. How to stand up a node app and what we are doing here.
+    i. Node / Babel / Nodemon
+    ii. Dotenv and node processes
+2. Basics of Express (what role does it fill?)
+    i. Routes, HTTP and Middleware
+3. Examples
+    i. Setting up App
+    ii. 3P Middleware / Router Parameters
+    iii. Defining Routes (Default and Specific)
+    iiii. Responses (response.json / response.send / response.sendStatus)
+    iiiii. Service Calls
+    iiiiii. Custom Middleware
