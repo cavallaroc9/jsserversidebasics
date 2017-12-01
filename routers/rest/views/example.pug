@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    title= "example page"
+
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    style.
+      * {
+        font-size: 16px;
+        font-family: helvetica, arial;
+      }
+      input {
+        margin-left: 6px;
+      }
+      button[type="submit"] {
+        font-size: 1.2em;
+        border-radius: 2px;
+        background-color: #eee;
+      }
+  body
+    h1 Login
+    #container
+      p You are currently not logged in.  Feel free to login.
+
+    form(method="post" action="/user/login" id="login" enctype="application/x-www-form-urlencoded")
+      label username:
+        input(name="USER" value=user.userId id="user")
+      br
+      <div id="password_fields">
+        label password:
+          input(name="PASSWORD" value=user.userPassword id="password")
+      </div>
+      br
+      button(type="submit") login
+
+
