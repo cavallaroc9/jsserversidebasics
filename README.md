@@ -29,3 +29,8 @@ and is used to give you an idea of how you could add complex configuration to an
 
 - Basic implementation of a node server. 
 - Express and REST endpoints. 
+
+## Reading Materials
+* [Server Side JS?](http://www.zdnet.com/article/javascript-explodes-on-the-server-side-with-the-growth-of-node-js/)
+* [Why Node?](https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js)
+* [Express?](https://expressjs.com/)
