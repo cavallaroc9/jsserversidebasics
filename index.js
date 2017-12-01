@@ -20,14 +20,14 @@ app.use(cors({ origin: '*' }));
 // Set various HTTP headers
 app.use(helmet());
 
-/** Setup the express routes **/
+// Define the more complex routes and add to express
 routers(app);
 
-/** Setup port and host **/
-const port = process.env.PORT || 3000;
+// Setup ports and hosts
+const port = process.env.APP_PORT || 3000;
 const host = process.env.APP_HOST || '0.0.0.0';
 
-/** Topmost Route **/
+// Default the topmost route (catchall)
 app.get('/', (req, res) => {
   res.json({
     timestamp: Date.now(),
@@ -42,6 +42,7 @@ app.get('/', (req, res) => {
   });
 });
 
+// Listen for the server starting
 const server = app.listen(port, host, () => {
   /* eslint-disable no-console */
   console.log(`Server running at ${host}:${port}`);

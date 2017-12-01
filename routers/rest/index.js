@@ -13,10 +13,11 @@ const STATUS_CODES = {
   serverError : 500
 };
 
+// Setting up the express Router
 const router = express.Router();
 
 // Show how a page can be returned
-router.use('/page', (req, res) => {
+router.get('/page', (req, res) => {
   const html = EXAMPLE_PAGE({
     user: {}
   });
@@ -24,12 +25,14 @@ router.use('/page', (req, res) => {
   res.send(html);
 });
 
-router.use('/statusCodes', (req, res) => {
+// Show how you can manipulate HTTP Status Codes
+router.get('/statusCodes', (req, res) => {
   const requestedCode = _.get(req, 'query.statusCode');
 
   res.sendStatus(STATUS_CODES[requestedCode] || STATUS_CODES['serverError']);
 });
 
+// Show how you can handle service calls
 router.use('/serviceCall', (req, res) => {
   // Function to generate the call URL... typically done separate but kept inside this route for posterity
   const generateCurrencyURL = (req) => {
@@ -47,6 +50,7 @@ router.use('/serviceCall', (req, res) => {
     .catch(err => res.send(err));
 });
 
+// Setup basic catch-all route
 router.use('/', function (req, res) {
   res.send('Base REST example route');
 });
